@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <script>
+            class Sample
+            {
+                constructor(name,age)
+                {
+                    this.name=name;
+                    this.age=age;
+                }
+            }
+            const my1=new Sample("azar1",34);
+            const my2=new Sample("azar2",35);
+            document.getElementById("d1").innerHTML=my1.name+""+my2.name;
+            document.getElementById("d2").innerHTML=my1.age+""+my2.age;
+        </script>
+    </body>
+</html>

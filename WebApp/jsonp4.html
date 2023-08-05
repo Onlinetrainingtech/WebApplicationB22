@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1 id="d1"></h1>
+        <script>
+              const t1='{"name":"azar","dob":"1989-05-25","age":34,"city":"krr"}';
+            const obj=JSON.parse(t1,function(key,value){
+                if(key=='dob')
+                {
+                    return new Date(value);
+                }
+                else
+                {
+                    return value;
+                }
+            });
+            document.getElementById("d1").innerHTML=obj.name+""+obj.dob;
+        </script>
+    </body>
+</html>

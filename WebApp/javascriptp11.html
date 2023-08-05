@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function validateform()
+            {
+                let x=document.forms["myform1"]["uname"].value;
+                if(x=="")
+                {
+                    //alert("UserName must be filled out..");
+                    document.write("UserName must be filled out..")
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform1" action="" method="" onsubmit="return validateform()">
+            Uname:<input type="text" name="uname" disabled/>
+            Password:<input type="password" name="pass" required/>
+            University:<input type="text" value="XYZ" readonly/>
+            <label>SelectFiles</label>
+            <input type="file" name="files" multiple>
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>
