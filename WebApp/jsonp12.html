@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1 id="d1"></h1>
+        <script>
+            const myjson='{"name":"azar","age":34,"city":"krr"}';
+            const myobj=JSON.parse(myjson);
+            let t1="";
+            for(const x in myobj)
+            {
+                t1+=myobj[x]+",";
+            }
+            document.getElementById("d1").innerHTML=t1;
+        </script>
+    </body>
+</html>
